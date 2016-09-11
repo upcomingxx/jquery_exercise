@@ -1,0 +1,15 @@
+{
+  "name": "jquery_exercise",
+  "version": "1.0.0",
+  "description": "jquery 使用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "author": "tjy",
+  "license": "ISC"
+}
