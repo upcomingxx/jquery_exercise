@@ -30,11 +30,11 @@ var alias = {
 };
 
 var output = {
+    path:'./bin',
     filename:'bundle.js'
 };
 
 var loaders = [
-    {test:/.\jsx?$/, exclude: /node_modules/, loader:'babel'},
     {
         test: /\.json$/,
         loader: 'json-loader'
