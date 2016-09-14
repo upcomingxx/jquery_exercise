@@ -6,5 +6,10 @@
  * ÐÞ¸ÄÊ±¼ä£º
  */
 
-$('aaaa').appendTo('body');
-document.write('aa');
+
+var $ = require('jquery');
+
+$(function(){
+    $('<div>aaaa</div>').appendTo('body');
+    document.write('aa');
+});

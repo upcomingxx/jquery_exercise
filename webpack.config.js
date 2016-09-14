@@ -11,7 +11,7 @@ var pkg = require('./package');
 
 var entry = {
     index:'./index.js',
-    vendor:['jquery']
+    //vendor:['jquery']
 };
 
 var devServer = {
@@ -34,20 +34,15 @@ var output = {
 };
 
 var loaders = [
-    {test:/.\jsx?$/, exclude: /node_modules/, loader:'babel'},
-    {
-        test: /\.json$/,
-        loader: 'json-loader'
-    }
 ];
 
 var plugins = [
-    new webpack.ProvidePlugin({
+   /* new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery:'jquery',
         "window.jQuery":'jquery'
-    }),
-    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js')
+    }),*/
+    //new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js')
 ];
 
 module.exports = {
