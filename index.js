@@ -7,9 +7,5 @@
  */
 
 
-var $ = require('jquery');
-
-$(function(){
-    $('<div>aaaa</div>').appendTo('body');
-    document.write('aa');
-});
+$('<div>aaaa</div>').appendTo('body');
+document.write('aa');

@@ -6,12 +6,12 @@
  * ÐÞ¸ÄÊ±¼ä£º
  */
 var webpack = require('webpack');
-var path = require('path');
-var pkg = require('./package');
+//var path = require('path');
+//var pkg = require('./package');
 
 var entry = {
     index:'./index.js',
-    //vendor:['jquery']
+    vendor:['jquery']
 };
 
 var devServer = {
@@ -30,6 +30,7 @@ var alias = {
 };
 
 var output = {
+    path:'./bin',
     filename:'bundle.js'
 };
 
@@ -37,12 +38,12 @@ var loaders = [
 ];
 
 var plugins = [
-   /* new webpack.ProvidePlugin({
+    new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery:'jquery',
         "window.jQuery":'jquery'
-    }),*/
-    //new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js')
+    }),
+    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js')
 ];
 
 module.exports = {
